@@ -2,9 +2,12 @@
   "name": "cinderace-scss-pixel-art",
   "version": "1.0.0",
   "description": "Simple project featuring a Cinderace pixel art made exclusively with SCSS and React.",
+  "homepage": "http://naorimsenchai.github.io/cinderace-scss-pixel-art",
   "private": false,
   "scripts": {
     "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -36,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
