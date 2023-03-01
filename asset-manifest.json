@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cinderace-scss-pixel-art/static/css/main.7ef19781.css",
+    "main.js": "/cinderace-scss-pixel-art/static/js/main.3362af01.js",
+    "index.html": "/cinderace-scss-pixel-art/index.html",
+    "main.7ef19781.css.map": "/cinderace-scss-pixel-art/static/css/main.7ef19781.css.map",
+    "main.3362af01.js.map": "/cinderace-scss-pixel-art/static/js/main.3362af01.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ef19781.css",
+    "static/js/main.3362af01.js"
+  ]
+}
