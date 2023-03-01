@@ -1,0 +1,6318 @@
+@import url("../style.scss");
+
+$garlic: #e2e2e2;
+$salt: #a8b1b3;
+$mycelium: #666c75;
+$soja: #181818;
+
+$ketchup: #d0414d;
+$bbq: #90203d;
+$mayonnaise: #e0df86;
+$mustard: #e3b555;
+
+$blue: #4c4e79;
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #282c34;
+
+  h1 {
+    color: #fefefe;
+    margin-bottom: 2.4rem;
+    font-family: 'Modern Antiqua', cursive;
+    font-size: 4.8rem;
+  }
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.2rem;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8px;
+  max-height: 8px;
+  width: 8px;
+  max-width: 8px;
+  font-size: 4px;
+  animation: cellFadeIn 1s ease-in-out;
+  cursor: pointer;
+}
+
+@keyframes cellFadeIn {
+  0% {
+    transform: scale(0);
+    border-radius: 50%;
+  }
+  100% {
+    transform: scale(1);
+    border-radius: none;
+  }
+}
+
+.row:nth-child(1) {
+  .col:nth-child(12) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $bbq;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(39) {
+    background-color: $mycelium;
+  }
+}
+.row:nth-child(2) {
+  .col:nth-child(11) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(37) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(38) {
+    background-color: $garlic;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+}
+.row:nth-child(3) {
+  .col:nth-child(10) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(35) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $salt;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+}
+.row:nth-child(4) {
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(25) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(33) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $salt;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+}
+.row:nth-child(5) {
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(22) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(23) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(26) {
+    background-color: $bbq;
+  }
+  .col:nth-child(27) {
+    background-color: $bbq;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(31) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $salt;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+}
+.row:nth-child(6) {
+  .col:nth-child(8) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $bbq;
+  }
+  .col:nth-child(27) {
+    background-color: $bbq;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+}
+.row:nth-child(7) {
+  .col:nth-child(8) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $bbq;
+  }
+  .col:nth-child(27) {
+    background-color: $bbq;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(8) {
+  .col:nth-child(8) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $bbq;
+  }
+  .col:nth-child(15) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $bbq;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(33) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $garlic;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(9) {
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $salt;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(32) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $garlic;
+  }
+  .col:nth-child(40) {
+    background-color: $garlic;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $garlic;
+  }
+  .col:nth-child(43) {
+    background-color: $garlic;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(10) {
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $salt;
+  }
+  .col:nth-child(30) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(31) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $garlic;
+  }
+  .col:nth-child(39) {
+    background-color: $garlic;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $garlic;
+  }
+  .col:nth-child(42) {
+    background-color: $garlic;
+  }
+  .col:nth-child(43) {
+    background-color: $garlic;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(11) {
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $salt;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(30) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $garlic;
+  }
+  .col:nth-child(39) {
+    background-color: $garlic;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(42) {
+    background-color: $garlic;
+  }
+  .col:nth-child(43) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $soja;
+  }
+  .col:nth-child(50) {
+    background-color: $soja;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(12) {
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(11) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $bbq;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $salt;
+  }
+  .col:nth-child(27) {
+    background-color: $salt;
+  }
+  .col:nth-child(28) {
+    background-color: $salt;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $garlic;
+  }
+  .col:nth-child(39) {
+    background-color: $garlic;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(42) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $soja;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(13) {
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(11) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $bbq;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $salt;
+  }
+  .col:nth-child(26) {
+    background-color: $salt;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $garlic;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $garlic;
+  }
+  .col:nth-child(42) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $soja;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(14) {
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(11) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $salt;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $salt;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $salt;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(42) {
+    background-color: $bbq;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $bbq;
+  }
+  .col:nth-child(52) {
+    background-color: $soja;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(15) {
+  .col:nth-child(3) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(4) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(5) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $salt;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $salt;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $salt;
+  }
+  .col:nth-child(38) {
+    background-color: $salt;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(42) {
+    background-color: $bbq;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $bbq;
+  }
+  .col:nth-child(52) {
+    background-color: $soja;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(16) {
+  .col:nth-child(3) {
+    background-color: $soja;
+  }
+  .col:nth-child(4) {
+    background-color: $garlic;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(26) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $salt;
+  }
+  .col:nth-child(31) {
+    background-color: $salt;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $bbq;
+  }
+  .col:nth-child(42) {
+    background-color: $bbq;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $bbq;
+  }
+  .col:nth-child(52) {
+    background-color: $soja;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $mustard;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(17) {
+  .col:nth-child(4) {
+    background-color: $soja;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $garlic;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $salt;
+  }
+  .col:nth-child(29) {
+    background-color: $salt;
+  }
+  .col:nth-child(30) {
+    background-color: $salt;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $blue;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $bbq;
+  }
+  .col:nth-child(43) {
+    background-color: $bbq;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $soja;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $mustard;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(18) {
+  .col:nth-child(4) {
+    background-color: $soja;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $garlic;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(14) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $salt;
+  }
+  .col:nth-child(29) {
+    background-color: $salt;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $blue;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $bbq;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $mustard;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(19) {
+  .col:nth-child(5) {
+    background-color: $soja;
+  }
+  .col:nth-child(6) {
+    background-color: $garlic;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(15) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $salt;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $blue;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $bbq;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $mustard;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(20) {
+  .col:nth-child(6) {
+    background-color: $soja;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(16) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(17) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $salt;
+  }
+  .col:nth-child(31) {
+    background-color: $salt;
+  }
+  .col:nth-child(32) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $garlic;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $blue;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $bbq;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(21) {
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $bbq;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $garlic;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $salt;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $garlic;
+  }
+  .col:nth-child(35) {
+    background-color: $salt;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $blue;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(42) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $bbq;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(22) {
+  .col:nth-child(5) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(6) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(7) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(8) {
+    background-color: $salt;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $garlic;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $bbq;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $bbq;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $garlic;
+  }
+  .col:nth-child(33) {
+    background-color: $garlic;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $blue;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(42) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $bbq;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(23) {
+  .col:nth-child(6) {
+    background-color: $soja;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $salt;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $bbq;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $salt;
+  }
+  .col:nth-child(22) {
+    background-color: $salt;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $bbq;
+  }
+  .col:nth-child(25) {
+    background-color: $garlic;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $garlic;
+  }
+  .col:nth-child(31) {
+    background-color: $garlic;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $salt;
+  }
+  .col:nth-child(34) {
+    background-color: $salt;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $blue;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $bbq;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(24) {
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $salt;
+  }
+  .col:nth-child(12) {
+    background-color: $salt;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $garlic;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $garlic;
+  }
+  .col:nth-child(22) {
+    background-color: $garlic;
+  }
+  .col:nth-child(23) {
+    background-color: $garlic;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $garlic;
+  }
+  .col:nth-child(29) {
+    background-color: $garlic;
+  }
+  .col:nth-child(30) {
+    background-color: $salt;
+  }
+  .col:nth-child(31) {
+    background-color: $salt;
+  }
+  .col:nth-child(32) {
+    background-color: $salt;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $blue;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(45) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(25) {
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $garlic;
+  }
+  .col:nth-child(20) {
+    background-color: $garlic;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $garlic;
+  }
+  .col:nth-child(25) {
+    background-color: $garlic;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(29) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(30) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $blue;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(44) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(45) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(46) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $bbq;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(26) {
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $salt;
+  }
+  .col:nth-child(17) {
+    background-color: $salt;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $bbq;
+  }
+  .col:nth-child(22) {
+    background-color: $bbq;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $garlic;
+  }
+  .col:nth-child(25) {
+    background-color: $garlic;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $salt;
+  }
+  .col:nth-child(28) {
+    background-color: $salt;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $blue;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(44) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(45) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(46) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $soja;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(56) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(27) {
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $salt;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(21) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(22) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $salt;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $blue;
+  }
+  .col:nth-child(34) {
+    background-color: $blue;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(45) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(28) {
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $salt;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(29) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $blue;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $soja;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(29) {
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $garlic;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $garlic;
+  }
+  .col:nth-child(28) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(29) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $blue;
+  }
+  .col:nth-child(33) {
+    background-color: $blue;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(30) {
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $garlic;
+  }
+  .col:nth-child(26) {
+    background-color: $garlic;
+  }
+  .col:nth-child(27) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(28) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(29) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $blue;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $soja;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(31) {
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $salt;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $salt;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $salt;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(26) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(27) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(28) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $blue;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $mustard;
+  }
+}
+.row:nth-child(32) {
+  .col:nth-child(3) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(4) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $garlic;
+  }
+  .col:nth-child(22) {
+    background-color: $garlic;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $blue;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(33) {
+  .col:nth-child(2) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(3) {
+    background-color: $garlic;
+  }
+  .col:nth-child(4) {
+    background-color: $garlic;
+  }
+  .col:nth-child(5) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $salt;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $salt;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $garlic;
+  }
+  .col:nth-child(21) {
+    background-color: $garlic;
+  }
+  .col:nth-child(22) {
+    background-color: $garlic;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $blue;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(34) {
+  .col:nth-child(1) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(2) {
+    background-color: $salt;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $garlic;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $garlic;
+  }
+  .col:nth-child(21) {
+    background-color: $garlic;
+  }
+  .col:nth-child(22) {
+    background-color: $garlic;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(35) {
+  .col:nth-child(1) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(2) {
+    background-color: $salt;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $salt;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $garlic;
+  }
+  .col:nth-child(21) {
+    background-color: $garlic;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(36) {
+  .col:nth-child(1) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(2) {
+    background-color: $salt;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $garlic;
+  }
+  .col:nth-child(6) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $salt;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $bbq;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(37) {
+  .col:nth-child(1) {
+    background-color: $soja;
+  }
+  .col:nth-child(2) {
+    background-color: $salt;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(6) {
+    background-color: $soja;
+  }
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $salt;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $mustard;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(38) {
+  .col:nth-child(1) {
+    background-color: $soja;
+  }
+  .col:nth-child(2) {
+    background-color: $salt;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $salt;
+  }
+  .col:nth-child(6) {
+    background-color: $garlic;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $salt;
+  }
+  .col:nth-child(13) {
+    background-color: $salt;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $mustard;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $bbq;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $mustard;
+  }
+  .col:nth-child(42) {
+    background-color: $mustard;
+  }
+  .col:nth-child(43) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(39) {
+  .col:nth-child(2) {
+    background-color: $soja;
+  }
+  .col:nth-child(3) {
+    background-color: $salt;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $salt;
+  }
+  .col:nth-child(6) {
+    background-color: $salt;
+  }
+  .col:nth-child(7) {
+    background-color: $garlic;
+  }
+  .col:nth-child(8) {
+    background-color: $garlic;
+  }
+  .col:nth-child(9) {
+    background-color: $garlic;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $salt;
+  }
+  .col:nth-child(12) {
+    background-color: $salt;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(17) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(18) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $mustard;
+  }
+  .col:nth-child(23) {
+    background-color: $mustard;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $mustard;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $bbq;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $mustard;
+  }
+  .col:nth-child(41) {
+    background-color: $mustard;
+  }
+  .col:nth-child(42) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(40) {
+  .col:nth-child(3) {
+    background-color: $soja;
+  }
+  .col:nth-child(4) {
+    background-color: $salt;
+  }
+  .col:nth-child(5) {
+    background-color: $salt;
+  }
+  .col:nth-child(6) {
+    background-color: $salt;
+  }
+  .col:nth-child(7) {
+    background-color: $salt;
+  }
+  .col:nth-child(8) {
+    background-color: $salt;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $salt;
+  }
+  .col:nth-child(11) {
+    background-color: $salt;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $bbq;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $mustard;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $mustard;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $bbq;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(41) {
+  .col:nth-child(4) {
+    background-color: $soja;
+  }
+  .col:nth-child(5) {
+    background-color: $soja;
+  }
+  .col:nth-child(6) {
+    background-color: $salt;
+  }
+  .col:nth-child(7) {
+    background-color: $salt;
+  }
+  .col:nth-child(8) {
+    background-color: $salt;
+  }
+  .col:nth-child(9) {
+    background-color: $salt;
+  }
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $salt;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $bbq;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $mustard;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(42) {
+  .col:nth-child(6) {
+    background-color: $soja;
+  }
+  .col:nth-child(7) {
+    background-color: $soja;
+  }
+  .col:nth-child(8) {
+    background-color: $soja;
+  }
+  .col:nth-child(9) {
+    background-color: $soja;
+  }
+  .col:nth-child(10) {
+    background-color: $garlic;
+  }
+  .col:nth-child(11) {
+    background-color: $garlic;
+  }
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(14) {
+    background-color: $mycelium;
+  }
+  .col:nth-child(15) {
+    background-color: $garlic;
+  }
+  .col:nth-child(16) {
+    background-color: $salt;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $bbq;
+  }
+  .col:nth-child(19) {
+    background-color: $bbq;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(23) {
+    background-color: $mustard;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $mustard;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $bbq;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(46) {
+    background-color: $mustard;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(43) {
+  .col:nth-child(10) {
+    background-color: $soja;
+  }
+  .col:nth-child(11) {
+    background-color: $soja;
+  }
+  .col:nth-child(12) {
+    background-color: $garlic;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(14) {
+    background-color: $garlic;
+  }
+  .col:nth-child(15) {
+    background-color: $salt;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(21) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(22) {
+    background-color: $mustard;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $bbq;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $mustard;
+  }
+  .col:nth-child(46) {
+    background-color: $mustard;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(44) {
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $garlic;
+  }
+  .col:nth-child(14) {
+    background-color: $soja;
+  }
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(21) {
+    background-color: $mustard;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $mustard;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(36) {
+    background-color: $garlic;
+  }
+  .col:nth-child(37) {
+    background-color: $garlic;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $mustard;
+  }
+  .col:nth-child(45) {
+    background-color: $mustard;
+  }
+  .col:nth-child(46) {
+    background-color: $mustard;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(55) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(45) {
+  .col:nth-child(12) {
+    background-color: $soja;
+  }
+  .col:nth-child(13) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(19) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(23) {
+    background-color: $mustard;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $mustard;
+  }
+  .col:nth-child(26) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $mustard;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(35) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(44) {
+    background-color: $mustard;
+  }
+  .col:nth-child(45) {
+    background-color: $mustard;
+  }
+  .col:nth-child(46) {
+    background-color: $mustard;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(46) {
+  .col:nth-child(15) {
+    background-color: $soja;
+  }
+  .col:nth-child(16) {
+    background-color: $soja;
+  }
+  .col:nth-child(17) {
+    background-color: $soja;
+  }
+  .col:nth-child(18) {
+    background-color: $soja;
+  }
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $mustard;
+  }
+  .col:nth-child(23) {
+    background-color: $mustard;
+  }
+  .col:nth-child(24) {
+    background-color: $mustard;
+  }
+  .col:nth-child(25) {
+    background-color: $soja;
+  }
+  .col:nth-child(27) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $mustard;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(32) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(33) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(34) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(35) {
+    background-color: $mustard;
+  }
+  .col:nth-child(36) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(37) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(38) {
+    background-color: $mustard;
+  }
+  .col:nth-child(39) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $mustard;
+  }
+  .col:nth-child(44) {
+    background-color: $mustard;
+  }
+  .col:nth-child(45) {
+    background-color: $mustard;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $mustard;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(47) {
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $mustard;
+  }
+  .col:nth-child(22) {
+    background-color: $mustard;
+  }
+  .col:nth-child(23) {
+    background-color: $soja;
+  }
+  .col:nth-child(24) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $mustard;
+  }
+  .col:nth-child(31) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(32) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(33) {
+    background-color: $mayonnaise;
+  }
+  .col:nth-child(34) {
+    background-color: $mustard;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $mustard;
+  }
+  .col:nth-child(37) {
+    background-color: $mustard;
+  }
+  .col:nth-child(38) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $mustard;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $mustard;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(54) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(48) {
+  .col:nth-child(19) {
+    background-color: $soja;
+  }
+  .col:nth-child(20) {
+    background-color: $soja;
+  }
+  .col:nth-child(21) {
+    background-color: $soja;
+  }
+  .col:nth-child(22) {
+    background-color: $soja;
+  }
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $mustard;
+  }
+  .col:nth-child(32) {
+    background-color: $mustard;
+  }
+  .col:nth-child(33) {
+    background-color: $mustard;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $mustard;
+  }
+  .col:nth-child(43) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $mustard;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(53) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(49) {
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(42) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(48) {
+    background-color: $mustard;
+  }
+  .col:nth-child(49) {
+    background-color: $mustard;
+  }
+  .col:nth-child(50) {
+    background-color: $mustard;
+  }
+  .col:nth-child(51) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(52) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(50) {
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(44) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(47) {
+    background-color: $mustard;
+  }
+  .col:nth-child(48) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(49) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(50) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(51) {
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(43) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(46) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(47) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(52) {
+  .col:nth-child(28) {
+    background-color: $soja;
+  }
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(45) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(53) {
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $bbq;
+  }
+  .col:nth-child(33) {
+    background-color: $bbq;
+  }
+  .col:nth-child(34) {
+    background-color: $bbq;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $bbq;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(42) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(54) {
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $bbq;
+  }
+  .col:nth-child(32) {
+    background-color: $bbq;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $bbq;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(41) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(55) {
+  .col:nth-child(29) {
+    background-color: $soja;
+  }
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $bbq;
+  }
+  .col:nth-child(32) {
+    background-color: $bbq;
+  }
+  .col:nth-child(33) {
+    background-color: $bbq;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $bbq;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+  .col:nth-child(37) {
+    background-color: $soja;
+  }
+  .col:nth-child(39) {
+    background-color: $ketchup;
+  }
+  .col:nth-child(40) {
+    background-color: $ketchup;
+  }
+}
+.row:nth-child(56) {
+  .col:nth-child(30) {
+    background-color: $soja;
+  }
+  .col:nth-child(31) {
+    background-color: $soja;
+  }
+  .col:nth-child(32) {
+    background-color: $soja;
+  }
+  .col:nth-child(33) {
+    background-color: $soja;
+  }
+  .col:nth-child(34) {
+    background-color: $soja;
+  }
+  .col:nth-child(35) {
+    background-color: $soja;
+  }
+  .col:nth-child(36) {
+    background-color: $soja;
+  }
+}
