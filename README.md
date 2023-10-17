@@ -1,4 +1,4 @@
-<h1><img src="https://raw.githubusercontent.com/SoruTheSleepy/cinderace-pixel-art/main/public/cinderace.png" height="56px" width="56px">  Cinderace SCSS Pixel Art</h1>
+<h1><img src="https://raw.githubusercontent.com/SoruTheSleepy/cinderace-scss-pixel-art/main/public/cinderace.png" height="56px" width="56px">  Cinderace SCSS Pixel Art</h1>
 
 <p>Simple project featuring a Cinderace pixel art made exclusively with SCSS and React.</p>
 
