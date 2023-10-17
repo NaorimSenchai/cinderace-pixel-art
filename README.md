@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Installing
 
-You can clone this project with Git using the <code>git clone https://github.com/SoruTheSleepy/cinderace-pixel-art.git</code> command.
+You can clone this project with Git using the <code>git clone https://github.com/SoruTheSleepy/cinderace-scss-pixel-art.git</code> command.
 
 Or simply download it as a .zip file by clicking [here](https://github.com/SoruTheSleepy/cinderace-pixel-art/archive/refs/heads/main.zip) and extract it.
 
